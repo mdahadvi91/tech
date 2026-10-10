@@ -3,277 +3,207 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ahadex - AI Tools, Tech Tips & Online Earning Guides 2026</title>
-<link rel="alternate" hreflang="en" href="https://ahadex.online/" />
-<link rel="alternate" hreflang="bn" href="https://ahadex.online/bn/" />
-<link rel="alternate" hreflang="ar" href="https://ahadex.online/ar/" />
-<link rel="alternate" hreflang="hi" href="https://ahadex.online/hi/" />
-<link rel="alternate" hreflang="x-default" href="https://ahadex.online/" />
+<title>Ahadex — AI Tools, Tech Tips & Online Earning Guides 2026</title>
 <meta name="description" content="Discover the best AI tools, tech tips, freelancing guides, and online earning methods. Updated daily for a global audience.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',sans-serif;line-height:1.7;color:#1a1a1a;background:#fff}
-.container{max-width:1100px;margin:0 auto;padding:0 20px}
-.header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:100;padding:15px 0}
-.header-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.logo{font-size:22px;font-weight:700;color:#0066ff;text-decoration:none}
-.nav{display:flex;gap:20px;flex-wrap:wrap}
-.nav a{color:#444;text-decoration:none;font-weight:500;font-size:15px}
-.nav a:hover{color:#0066ff}
-.hero{padding:50px 0;background:linear-gradient(135deg,#f0f7ff,#fff);text-align:center}
-.hero h1{font-size:38px;line-height:1.2;margin-bottom:20px;color:#0a0a0a}
-.hero p{font-size:18px;color:#555;margin-bottom:25px;max-width:700px;margin-left:auto;margin-right:auto}
-.btn{display:inline-block;padding:14px 30px;background:#0066ff;color:#fff;text-decoration:none;border-radius:10px;font-weight:600}
-.btn:hover{background:#0052cc}
-.section{padding:50px 0}
-.section-title{font-size:26px;margin-bottom:25px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:22px}
-.card{border:1px solid #eee;border-radius:12px;overflow:hidden;background:#fff;transition:.3s}
-.card:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.08)}
-.card a.img-link{display:block;overflow:hidden}
-.card img{width:100%;height:180px;object-fit:cover;display:block;background:#f0f0f0;transition:.3s}
-.card:hover img{transform:scale(1.05)}
-.card-body{padding:18px}
-.tag{display:inline-block;padding:4px 10px;background:#e6f0ff;color:#0066ff;border-radius:6px;font-size:12px;font-weight:600;margin-bottom:10px}
-.card h3{font-size:17px;margin-bottom:8px;line-height:1.4}
-.card h3 a{color:#1a1a1a;text-decoration:none}
-.card h3 a:hover{color:#0066ff}
-.card p{color:#666;font-size:14px}
-.card p a{color:#0066ff;text-decoration:none;font-weight:500}
-.card p a:hover{text-decoration:underline}
-.footer{background:#0a0a0a;color:#ccc;padding:40px 0 20px;margin-top:50px}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;margin-bottom:30px}
-.footer h4{color:#fff;margin-bottom:12px;font-size:16px}
-.footer a{display:block;color:#ccc;text-decoration:none;margin-bottom:8px;font-size:14px}
-.footer a:hover{color:#fff}
-.copy{text-align:center;padding-top:20px;border-top:1px solid #222;font-size:13px;color:#888}
-@media(max-width:768px){
-.hero h1{font-size:26px}
-.nav{display:none}
-}
-</style>
-<style id="lang-switcher-css">
-.lang-switcher-wrap{position:relative;display:inline-block}
-.lang-btn{display:flex;align-items:center;gap:6px;padding:8px 14px;background:#0066ff;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
-.lang-btn:hover{background:#0052cc}
-.lang-dropdown{display:none;position:absolute;top:110%;right:0;background:#fff;border:1px solid #eee;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.12);min-width:180px;z-index:200;overflow:hidden}
-.lang-dropdown.open{display:block}
-.lang-dropdown a{display:flex;align-items:center;gap:10px;padding:12px 16px;color:#333;text-decoration:none;font-size:14px;transition:.2s}
-.lang-dropdown a:hover{background:#f0f7ff;color:#0066ff}
-.lang-dropdown a.active{background:#f0f7ff;color:#0066ff;font-weight:600}
-.lang-flag{font-size:18px}
-</style></head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/main.css">
+</head>
 <body>
 
+<!-- HEADER -->
 <header class="header">
-<div class="container header-inner">
-<a href="index.html" class="logo">Ahadex</a>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="privacy.html">Privacy</a>
-</nav>
+  <div class="header-inner">
+    <a href="/" class="logo"><span>Ahadex</span></a>
+    <button class="menu-btn" onclick="toggleSearch()" aria-label="Search">🔍</button>
+    <div class="search-box" id="searchBox">
+      <input type="text" id="searchInput" placeholder="Search articles..." autocomplete="off" onkeyup="searchPosts(this.value)">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn" onclick="toggleLangMenu()" aria-label="Language">
+        <span class="lang-flag" id="currentFlag">🌍</span>
+        <span id="currentLang">EN</span>
+        <span style="font-size:10px">▼</span>
+      </button>
+      <div class="lang-dropdown" id="langDropdown">
+        <a href="/" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
+        <a href="/bn/" data-lang="bn"><span class="lang-flag">🇧🇩</span> বাংলা</a>
+        <a href="/ar/" data-lang="ar"><span class="lang-flag">🇦🇪</span> العربية</a>
+        <a href="/hi/" data-lang="hi"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
+      </div>
+    </div>
+  </div>
+</header>
 
-</div>
-<div class="lang-switcher-wrap">
-<button class="lang-btn" onclick="toggleLangMenu()">
-<span class="lang-flag" id="current-flag">🌍</span>
-<span id="current-lang">English</span>
-<span style="font-size:10px">▼</span>
-</button>
-<div class="lang-dropdown" id="lang-dropdown">
-<a href="/" data-lang="en" onclick="setLang(event, 'en')"><span class="lang-flag">🇬🇧</span> English</a>
-<a href="/bn/" data-lang="bn" onclick="setLang(event, 'bn')"><span class="lang-flag">🇧🇩</span> বাংলা</a>
-<a href="/ar/" data-lang="ar" onclick="setLang(event, 'ar')"><span class="lang-flag">🇦🇪</span> العربية</a>
-<a href="/hi/" data-lang="hi" onclick="setLang(event, 'hi')"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
-</div>
-</div></header>
-
+<!-- HERO -->
 <section class="hero">
-<div class="container">
-<h1>AI Tools, Tech Tips & Online Earning Guides for 2026</h1>
-<p>Discover the best AI tools, freelancing guides, and online earning methods - updated weekly. Written from real experience, not theory.</p>
-<a href="#posts" class="btn">Explore Articles</a>
-</div>
+  <div class="container hero-inner">
+    <h1>AI Tools, Tech Tips & <span>Online Earning</span> Guides for 2026</h1>
+    <p>Discover the best AI tools, freelancing guides, and online earning methods — written from real experience, not theory.</p>
+    <a href="#posts" class="btn-primary">Explore Articles →</a>
+  </div>
 </section>
 
+<!-- POSTS -->
 <section class="section" id="posts">
-<div class="container">
-<h2 class="section-title">Latest Articles</h2>
-<div class="grid">
+  <div class="container">
+    <h2 class="section-title">Latest Articles</h2>
+    <p class="section-sub">Fresh content updated weekly from Dubai</p>
+    <div class="grid">
 
-<article class="card">
-<a href="posts/top-10-free-ai-tools-2025.html" class="img-link"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600" alt="AI Tools" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">AI Tools</span>
-<h3><a href="posts/top-10-free-ai-tools-2025.html">Top 10 Free AI Tools in 2026</a></h3>
-<p>The most powerful AI tools that cost nothing... <a href="posts/top-10-free-ai-tools-2025.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/top-10-free-ai-tools-2025.html" class="card-img"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600" alt="AI Tools" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">AI Tools</span>
+          <h3><a href="/posts/top-10-free-ai-tools-2025.html">Top 10 Free AI Tools in 2026</a></h3>
+          <p>4 months of testing, real results — <a href="/posts/top-10-free-ai-tools-2025.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/speed-up-android-phone-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600" alt="Android Tips" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">Tech Tips</span>
-<h3><a href="posts/speed-up-android-phone-2026.html">How to Speed Up Your Android Phone</a></h3>
-<p>10 proven tricks to make your phone faster... <a href="posts/speed-up-android-phone-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/speed-up-android-phone-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600" alt="Android" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">Tech Tips</span>
+          <h3><a href="/posts/speed-up-android-phone-2026.html">How to Speed Up Your Android Phone</a></h3>
+          <p>30-day experiment with my own phone — <a href="/posts/speed-up-android-phone-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/best-free-vpn-apps-uae-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="VPN UAE" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">Apps</span>
-<h3><a href="posts/best-free-vpn-apps-uae-2026.html">Best Free VPN Apps for UAE Users</a></h3>
-<p>7 tested VPNs that actually work in UAE... <a href="posts/best-free-vpn-apps-uae-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/best-free-vpn-apps-uae-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="VPN" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">Apps</span>
+          <h3><a href="/posts/best-free-vpn-apps-uae-2026.html">Best Free VPN Apps for UAE Users</a></h3>
+          <p>7 VPNs tested for 3 months — <a href="/posts/best-free-vpn-apps-uae-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/start-freelancing-from-uae-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="Freelancing UAE" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">Freelancing</span>
-<h3><a href="posts/start-freelancing-from-uae-2026.html">How to Start Freelancing from UAE</a></h3>
-<p>Complete guide for UAE residents to earn online... <a href="posts/start-freelancing-from-uae-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/start-freelancing-from-uae-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="Freelancing" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">Freelancing</span>
+          <h3><a href="/posts/start-freelancing-from-uae-2026.html">How to Start Freelancing from UAE</a></h3>
+          <p>AED 15,000/month in 8 months — <a href="/posts/start-freelancing-from-uae-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/chatgpt-complete-guide-beginners.html" class="img-link"><img src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600" alt="ChatGPT Guide" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">AI Tools</span>
-<h3><a href="posts/chatgpt-complete-guide-beginners.html">ChatGPT Complete Guide for Beginners</a></h3>
-<p>Learn ChatGPT from scratch in 10 minutes... <a href="posts/chatgpt-complete-guide-beginners.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/chatgpt-complete-guide-beginners.html" class="card-img"><img src="https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=600" alt="ChatGPT" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">AI Tools</span>
+          <h3><a href="/posts/chatgpt-complete-guide-beginners.html">ChatGPT Complete Guide for Beginners</a></h3>
+          <p>From zero to confident user — <a href="/posts/chatgpt-complete-guide-beginners.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/best-online-earning-apps-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600" alt="Online Earning" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">Earning</span>
-<h3><a href="posts/best-online-earning-apps-2026.html">15 Best Online Earning Apps 2026</a></h3>
-<p>Real apps that actually pay through Payoneer... <a href="posts/best-online-earning-apps-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/best-online-earning-apps-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600" alt="Earning" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">Earning</span>
+          <h3><a href="/posts/best-online-earning-apps-2026.html">15 Best Online Earning Apps 2026</a></h3>
+          <p>Real apps that actually pay — <a href="/posts/best-online-earning-apps-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/save-money-expat-uae-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600" alt="Save Money UAE" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">UAE Life</span>
-<h3><a href="posts/save-money-expat-uae-2026.html">Save Money as an Expat in UAE</a></h3>
-<p>15 proven tips to build real savings in UAE... <a href="posts/save-money-expat-uae-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/save-money-expat-uae-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600" alt="Save Money" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">UAE Life</span>
+          <h3><a href="/posts/save-money-expat-uae-2026.html">Save Money as an Expat in UAE</a></h3>
+          <p>Real budget breakdown — <a href="/posts/save-money-expat-uae-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/top-10-android-apps-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=600" alt="Android Apps" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">Apps</span>
-<h3><a href="posts/top-10-android-apps-2026.html">Top 10 Android Apps You Must Have</a></h3>
-<p>Free must-have apps for every Android phone... <a href="posts/top-10-android-apps-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/top-10-android-apps-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=600" alt="Android Apps" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">Apps</span>
+          <h3><a href="/posts/top-10-android-apps-2026.html">Top 10 Android Apps You Must Have</a></h3>
+          <p>Tested and used daily — <a href="/posts/top-10-android-apps-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/make-money-with-ai-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600" alt="Money with AI" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">AI Tools</span>
-<h3><a href="posts/make-money-with-ai-2026.html">How to Make Money with AI in 2026</a></h3>
-<p>10 real methods with realistic income potential... <a href="posts/make-money-with-ai-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/make-money-with-ai-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600" alt="Money AI" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">AI Tools</span>
+          <h3><a href="/posts/make-money-with-ai-2026.html">How to Make Money with AI in 2026</a></h3>
+          <p>4 attempts, 3 failures, 1 success — <a href="/posts/make-money-with-ai-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/best-free-online-courses-certificates-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Free Courses" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">Education</span>
-<h3><a href="posts/best-free-online-courses-certificates-2026.html">Best Free Online Courses with Certificates</a></h3>
-<p>15 free courses from Google, IBM, Harvard... <a href="posts/best-free-online-courses-certificates-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/best-free-online-courses-certificates-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600" alt="Courses" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">Education</span>
+          <h3><a href="/posts/best-free-online-courses-certificates-2026.html">Best Free Online Courses with Certificates</a></h3>
+          <p>8 courses I actually completed — <a href="/posts/best-free-online-courses-certificates-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/how-to-get-job-in-uae-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Jobs in UAE" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">UAE Life</span>
-<h3><a href="posts/how-to-get-job-in-uae-2026.html">How to Get a Job in UAE</a></h3>
-<p>Complete guide with CV tips and salary expectations... <a href="posts/how-to-get-job-in-uae-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/how-to-get-job-in-uae-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Job UAE" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">UAE Life</span>
+          <h3><a href="/posts/how-to-get-job-in-uae-2026.html">How to Get a Job in UAE</a></h3>
+          <p>My 12 rejections story — <a href="/posts/how-to-get-job-in-uae-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-<article class="card">
-<a href="posts/how-to-build-website-free-2026.html" class="img-link"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600" alt="Build Website Free" loading="lazy"></a>
-<div class="card-body">
-<span class="tag">Tech Tips</span>
-<h3><a href="posts/how-to-build-website-free-2026.html">How I Built My Website for Free</a></h3>
-<p>Step-by-step guide using GitHub and Cloudflare... <a href="posts/how-to-build-website-free-2026.html">Read more</a></p>
-</div>
-</article>
+      <article class="card">
+        <a href="/posts/how-to-build-website-free-2026.html" class="card-img"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600" alt="Website" loading="lazy"></a>
+        <div class="card-body">
+          <span class="tag">Tech Tips</span>
+          <h3><a href="/posts/how-to-build-website-free-2026.html">How I Built My Website for Free</a></h3>
+          <p>Step-by-step with GitHub — <a href="/posts/how-to-build-website-free-2026.html">Read more</a></p>
+        </div>
+      </article>
 
-</div>
-</div>
+    </div>
+  </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
-<div class="container">
-<div class="footer-grid">
-<div>
-<h4>Ahadex</h4>
-<p style="font-size:14px;margin:0">Your daily source for AI, Tech & Earning tips. Written from real experience.</p>
-</div>
-<div>
-<h4>Quick Links</h4>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="privacy.html">Privacy</a>
-<a href="disclaimer.html">Disclaimer</a>
-</div>
-<div>
-<h4>Follow</h4>
-<a href="#">Facebook</a>
-<a href="#">YouTube</a>
-<a href="#">Twitter</a>
-</div>
-</div>
-<p class="copy">2026 Ahadex.online - All Rights Reserved</p>
-</div>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Ahadex</div>
+        <p>Your daily source for AI, tech & earning tips. Real experience, honest advice.</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+      </div>
+      <div>
+        <h4>Languages</h4>
+        <a href="/">English</a>
+        <a href="/bn/">বাংলা</a>
+        <a href="/ar/">العربية</a>
+        <a href="/hi/">हिन्दी</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Ahadex.online — All Rights Reserved</div>
+  </div>
 </footer>
 
 <script>
-(function() {
-  const saved = localStorage.getItem('ahadex_lang');
-  if (saved && saved !== 'en') {
-    const path = window.location.pathname;
-    if (path === '/' || path === '/index.html') {
-      window.location.replace('/' + saved + '/');
-      return;
-    }
-  }
-  if (saved) return;
-  fetch('https://ipapi.co/json/')
-    .then(r => r.json())
-    .then(data => {
-      const map = {
-        'BD':'bn','IN':'hi','AE':'ar','SA':'ar','EG':'ar','QA':'ar','KW':'ar',
-        'BH':'ar','OM':'ar','JO':'ar','LB':'ar','IQ':'ar'
-      };
-      const lang = map[data.country_code] || 'en';
-      if (lang !== 'en') {
-        localStorage.setItem('ahadex_lang', lang);
-        window.location.replace('/' + lang + '/');
-      }
-    })
-    .catch(() => {});
-})();
-</script>
-<script id="lang-switcher-js">
-function toggleLangMenu(){document.getElementById("lang-dropdown").classList.toggle("open");}
+function toggleLangMenu(){document.getElementById("langDropdown").classList.toggle("open");}
 function setLang(e,lang){e.preventDefault();localStorage.setItem("ahadex_lang",lang);var urls={en:"/",bn:"/bn/",ar:"/ar/",hi:"/hi/"};window.location.href=urls[lang];}
-function updateLangBtn(){var l=localStorage.getItem("ahadex_lang")||"en";var names={en:"English",bn:"বাংলা",ar:"العربية",hi:"हिन्दी"};var flags={en:"🇬🇧",bn:"🇧🇩",ar:"🇦🇪",hi:"🇮🇳"};var el1=document.getElementById("current-lang");var el2=document.getElementById("current-flag");if(el1)el1.textContent=names[l];if(el2)el2.textContent=flags[l];}
-document.addEventListener("click",function(e){var d=document.getElementById("lang-dropdown");var b=document.querySelector(".lang-btn");if(d&&b&&!d.contains(e.target)&&!b.contains(e.target)){d.classList.remove("open");}});
-updateLangBtn();
-</script></body>
+document.querySelectorAll(".lang-dropdown a").forEach(function(a){a.addEventListener("click",function(e){setLang(e,this.dataset.lang);});});
+document.addEventListener("click",function(e){var d=document.getElementById("langDropdown");var b=document.querySelector(".lang-btn");if(d&&b&&!d.contains(e.target)&&!b.contains(e.target))d.classList.remove("open");var s=document.getElementById("searchBox");if(s&&!s.contains(e.target)&&!e.target.closest(".menu-btn"))s.classList.remove("active");});
+(function(){var l=localStorage.getItem("ahadex_lang")||"en";var names={en:"EN",bn:"বাং",ar:"عربي",hi:"हि"};var flags={en:"🇬🇧",bn:"🇧🇩",ar:"🇦🇪",hi:"🇮🇳"};var e1=document.getElementById("currentLang");var e2=document.getElementById("currentFlag");if(e1)e1.textContent=names[l];if(e2)e2.textContent=flags[l];var c=document.querySelector('.lang-dropdown a[data-lang="'+l+'"]');if(c)c.classList.add("active");})();
+function toggleSearch(){document.getElementById("searchBox").classList.toggle("active");setTimeout(function(){var i=document.getElementById("searchInput");if(i)i.focus();},100);}
+var POSTS=[];
+function searchPosts(q){var r=document.getElementById("searchResults");if(!q||q.length<2){r.classList.remove("active");return;}var ql=q.toLowerCase();var m=POSTS.filter(function(p){return (p.title+" "+p.tags+" "+p.description).toLowerCase().indexOf(ql)>-1;}).slice(0,6);if(m.length===0){r.innerHTML='<div class="search-result-item"><p>No results found</p></div>';}else{r.innerHTML=m.map(function(p){return '<a class="search-result-item" href="'+p.url+'"><h4>'+p.title+'</h4><p>'+p.description.substring(0,80)+'...</p></a>';}).join("");}r.classList.add("active");}
+fetch('/data/posts.json').then(function(r){return r.json();}).then(function(d){POSTS=d;}).catch(function(){});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(e){var t=document.querySelector(this.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"});}});});
+</script>
+
+</body>
 </html>

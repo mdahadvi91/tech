@@ -1,0 +1,26 @@
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo"><span>Ahadex</span></a>
+    
+    <button class="menu-btn" onclick="toggleSearch()" aria-label="Search">🔍</button>
+    
+    <div class="search-box" id="searchBox">
+      <input type="text" id="searchInput" placeholder="Search articles..." autocomplete="off" onkeyup="searchPosts(this.value)">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    
+    <div class="lang-switcher">
+      <button class="lang-btn" onclick="toggleLangMenu()" aria-label="Language">
+        <span class="lang-flag" id="currentFlag">🌍</span>
+        <span id="currentLang">EN</span>
+        <span style="font-size:10px">▼</span>
+      </button>
+      <div class="lang-dropdown" id="langDropdown">
+        <a href="/" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
+        <a href="/bn/" data-lang="bn"><span class="lang-flag">🇧🇩</span> বাংলা</a>
+        <a href="/ar/" data-lang="ar"><span class="lang-flag">🇦🇪</span> العربية</a>
+        <a href="/hi/" data-lang="hi"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
+      </div>
+    </div>
+  </div>
+</header>
