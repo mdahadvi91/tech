@@ -14,31 +14,35 @@
 <div class="mobile-menu" id="mobileMenu">
   <button class="close-btn" onclick="toggleMenu()">✕</button>
   <a href="/">Home</a>
-  <a href="/#posts">Articles</a>
+  <a href="/#posts">All Articles</a>
+  <a href="/#ai">AI Tools</a>
+  <a href="/#tech">Tech</a>
+  <a href="/#earn">Earning</a>
   <a href="/about.html">About</a>
   <a href="/contact.html">Contact</a>
-  <a href="/privacy.html">Privacy</a>
 </div>
 <div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
 
 
+
+
+<!-- HEADER -->
 <!-- HEADER -->
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner">
-    <button class="menu-icon-btn" onclick="toggleMenu()" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    
     <a href="/" class="logo">
-      <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
-        <path d="M20 4L34 36H28L20 18L12 36H6L20 4Z" fill="url(#lg1)"/>
-        <defs><linearGradient id="lg1" x1="6" y1="4" x2="34" y2="36">
-          <stop stop-color="#0066ff"/><stop offset="1" stop-color="#00c3ff"/>
-        </linearGradient></defs>
-      </svg>
-      <span class="logo-text">AHADEX<small>Tools</small></span>
+      <span class="logo-mark">A</span>
+      <span class="logo-text">Ahadex</span>
     </a>
+    
+    <nav class="main-nav">
+      <a href="/#posts">Articles</a>
+      <a href="/#ai">AI Tools</a>
+      <a href="/#tech">Tech</a>
+      <a href="/#earn">Earning</a>
+      <a href="/about.html">About</a>
+    </nav>
     
     <div class="header-actions">
       <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
@@ -58,6 +62,10 @@
           <a href="/hi/" data-lang="hi"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
         </div>
       </div>
+      
+      <button class="menu-icon-btn" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
     
     <div class="search-box" id="searchBox">
