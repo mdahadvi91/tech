@@ -29,16 +29,17 @@ img{width:100%;height:auto;border-radius:12px;margin:20px 0}
 .footer{background:#0a0a0a;color:#ccc;padding:30px 0;margin-top:50px;text-align:center;font-size:14px}
 @media(max-width:768px){h1{font-size:22px}h2{font-size:19px}}
 </style>
+<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
-<header class="header">
-<div class="header-inner">
-<a href="/hi/" class="logo">Ahadex</a>
-</div>
-</header>
+<!-- COMPONENT MOUNTS -->
+<div id="header-mount"></div>
+<div id="mobile-mount"></div>
 
-<main>
+
+
+<main class="post-container">
 <div class="container">
 
 <h1>Android फोन को तेज करने के 10 तरीके — 30 दिन की टेस्टिंग डायरी</h1>
@@ -234,9 +235,12 @@ img{width:100%;height:auto;border-radius:12px;margin:20px 0}
 </div>
 </main>
 
-<footer class="footer">
-<p>2026 Ahadex.online - सर्वाधिकार सुरक्षित</p>
-</footer>
+
+
+<div id="footer-mount"></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/components.js"></script>
 
 </body>
 </html>

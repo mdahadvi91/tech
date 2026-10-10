@@ -38,19 +38,15 @@ h2{font-size:20px}
 .nav{display:none}
 }
 </style>
+<link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
 
-<header class="header">
-<div class="header-inner">
-<a href="/" class="logo">Ahadex</a>
-<nav class="nav">
-<a href="/">Home</a>
-<a href="/about.html">About</a>
-<a href="/contact.html">Contact</a>
-</nav>
-</div>
-</header>
+<!-- COMPONENT MOUNTS -->
+<div id="header-mount"></div>
+<div id="mobile-mount"></div>
+
+
 
 <main>
 <div class="container">
@@ -464,9 +460,12 @@ h2{font-size:20px}
 </div>
 </main>
 
-<footer class="footer">
-<p>2026 Ahadex.online - All Rights Reserved</p>
-</footer>
+
+
+<div id="footer-mount"></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/components.js"></script>
 
 </body>
 </html>
