@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ahadex - AI Tools, Tech Tips & Online Earning Guides 2026</title>
+<link rel="alternate" hreflang="en" href="https://ahadex.online/" />
+<link rel="alternate" hreflang="bn" href="https://ahadex.online/bn/" />
+<link rel="alternate" hreflang="ar" href="https://ahadex.online/ar/" />
+<link rel="alternate" hreflang="hi" href="https://ahadex.online/hi/" />
+<link rel="alternate" hreflang="x-default" href="https://ahadex.online/" />
 <meta name="description" content="Discover the best AI tools, tech tips, freelancing guides, and online earning methods. Updated daily for a global audience.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -61,6 +66,12 @@ body{font-family:'Inter',sans-serif;line-height:1.7;color:#1a1a1a;background:#ff
 <a href="contact.html">Contact</a>
 <a href="privacy.html">Privacy</a>
 </nav>
+<div class="lang-switch" style="display:flex;gap:6px;font-size:13px;">
+<a href="/" class="active" style="padding:4px 8px;border-radius:6px;background:#0066ff;color:#fff;text-decoration:none;">EN</a>
+<a href="/bn/" style="padding:4px 8px;border-radius:6px;background:#f0f0f0;text-decoration:none;color:#333;">বাং</a>
+<a href="/ar/" style="padding:4px 8px;border-radius:6px;background:#f0f0f0;text-decoration:none;color:#333;">عر</a>
+<a href="/hi/" style="padding:4px 8px;border-radius:6px;background:#f0f0f0;text-decoration:none;color:#333;">हि</a>
+</div>
 </div>
 </header>
 
@@ -214,5 +225,32 @@ body{font-family:'Inter',sans-serif;line-height:1.7;color:#1a1a1a;background:#ff
 </div>
 </footer>
 
+<script>
+(function() {
+  const saved = localStorage.getItem('ahadex_lang');
+  if (saved && saved !== 'en') {
+    const path = window.location.pathname;
+    if (path === '/' || path === '/index.html') {
+      window.location.replace('/' + saved + '/');
+      return;
+    }
+  }
+  if (saved) return;
+  fetch('https://ipapi.co/json/')
+    .then(r => r.json())
+    .then(data => {
+      const map = {
+        'BD':'bn','IN':'hi','AE':'ar','SA':'ar','EG':'ar','QA':'ar','KW':'ar',
+        'BH':'ar','OM':'ar','JO':'ar','LB':'ar','IQ':'ar'
+      };
+      const lang = map[data.country_code] || 'en';
+      if (lang !== 'en') {
+        localStorage.setItem('ahadex_lang', lang);
+        window.location.replace('/' + lang + '/');
+      }
+    })
+    .catch(() => {});
+})();
+</script>
 </body>
 </html>
