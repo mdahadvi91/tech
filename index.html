@@ -11,69 +11,10 @@
 <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-<div class="mobile-menu" id="mobileMenu">
-  <button class="close-btn" onclick="toggleMenu()">✕</button>
-  <a href="/">Home</a>
-  <a href="/#posts">All Articles</a>
-  <a href="/#ai">AI Tools</a>
-  <a href="/#tech">Tech</a>
-  <a href="/#earn">Earning</a>
-  <a href="/about.html">About</a>
-  <a href="/contact.html">Contact</a>
-</div>
-<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMenu()"></div>
 
-
-
-
-<!-- HEADER -->
-<!-- HEADER -->
-<!-- HEADER -->
-<header class="header">
-  <div class="header-inner">
-    <a href="/" class="logo">
-      <span class="logo-mark">A</span>
-      <span class="logo-text">Ahadex</span>
-    </a>
-    
-    <nav class="main-nav">
-      <a href="/#posts">Articles</a>
-      <a href="/#ai">AI Tools</a>
-      <a href="/#tech">Tech</a>
-      <a href="/#earn">Earning</a>
-      <a href="/about.html">About</a>
-    </nav>
-    
-    <div class="header-actions">
-      <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-          <circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>
-        </svg>
-      </button>
-      
-      <div class="lang-switcher">
-        <button class="icon-btn lang-btn" onclick="toggleLangMenu()" aria-label="Language">
-          <span id="currentFlag">🇬🇧</span>
-        </button>
-        <div class="lang-dropdown" id="langDropdown">
-          <a href="/" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
-          <a href="/bn/" data-lang="bn"><span class="lang-flag">🇧🇩</span> বাংলা</a>
-          <a href="/ar/" data-lang="ar"><span class="lang-flag">🇦🇪</span> العربية</a>
-          <a href="/hi/" data-lang="hi"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
-        </div>
-      </div>
-      
-      <button class="menu-icon-btn" onclick="toggleMenu()" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    
-    <div class="search-box" id="searchBox">
-      <input type="text" id="searchInput" placeholder="Search articles..." autocomplete="off" onkeyup="searchPosts(this.value)">
-      <div class="search-results" id="searchResults"></div>
-    </div>
-  </div>
-</header>
+<!-- COMPONENT MOUNTS -->
+<div id="header-mount"></div>
+<div id="mobile-mount"></div>
 
 <!-- HERO -->
 <section class="hero">
@@ -203,45 +144,11 @@
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">Ahadex</div>
-        <p>Your daily source for AI, tech & earning tips. Real experience, honest advice.</p>
-      </div>
-      <div>
-        <h4>Links</h4>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/privacy.html">Privacy</a>
-        <a href="/disclaimer.html">Disclaimer</a>
-      </div>
-      <div>
-        <h4>Languages</h4>
-        <a href="/">English</a>
-        <a href="/bn/">বাংলা</a>
-        <a href="/ar/">العربية</a>
-        <a href="/hi/">हिन्दी</a>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2026 Ahadex.online — All Rights Reserved</div>
-  </div>
-</footer>
+<!-- FOOTER MOUNT -->
+<div id="footer-mount"></div>
 
-<script>
-function toggleLangMenu(){document.getElementById("langDropdown").classList.toggle("open");}
-function setLang(e,lang){e.preventDefault();localStorage.setItem("ahadex_lang",lang);var urls={en:"/",bn:"/bn/",ar:"/ar/",hi:"/hi/"};window.location.href=urls[lang];}
-document.querySelectorAll(".lang-dropdown a").forEach(function(a){a.addEventListener("click",function(e){setLang(e,this.dataset.lang);});});
-document.addEventListener("click",function(e){var d=document.getElementById("langDropdown");var b=document.querySelector(".lang-btn");if(d&&b&&!d.contains(e.target)&&!b.contains(e.target))d.classList.remove("open");var s=document.getElementById("searchBox");if(s&&!s.contains(e.target)&&!e.target.closest(".menu-btn"))s.classList.remove("active");});
-(function(){var l=localStorage.getItem("ahadex_lang")||"en";var names={en:"EN",bn:"বাং",ar:"عربي",hi:"हि"};var flags={en:"🇬🇧",bn:"🇧🇩",ar:"🇦🇪",hi:"🇮🇳"};var e1=document.getElementById("currentLang");var e2=document.getElementById("currentFlag");if(e1)e1.textContent=names[l];if(e2)e2.textContent=flags[l];var c=document.querySelector('.lang-dropdown a[data-lang="'+l+'"]');if(c)c.classList.add("active");})();
-function toggleSearch(){document.getElementById("searchBox").classList.toggle("active");setTimeout(function(){var i=document.getElementById("searchInput");if(i)i.focus();},100);}
-var POSTS=[];
-function searchPosts(q){var r=document.getElementById("searchResults");if(!q||q.length<2){r.classList.remove("active");return;}var ql=q.toLowerCase();var m=POSTS.filter(function(p){return (p.title+" "+p.tags+" "+p.description).toLowerCase().indexOf(ql)>-1;}).slice(0,6);if(m.length===0){r.innerHTML='<div class="search-result-item"><p>No results found</p></div>';}else{r.innerHTML=m.map(function(p){return '<a class="search-result-item" href="'+p.url+'"><h4>'+p.title+'</h4><p>'+p.description.substring(0,80)+'...</p></a>';}).join("");}r.classList.add("active");}
-fetch('/data/posts.json').then(function(r){return r.json();}).then(function(d){POSTS=d;}).catch(function(){});
-document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener("click",function(e){var t=document.querySelector(this.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"});}});});
-</script>
+<script src="/js/main.js"></script>
+<script src="/js/components.js"></script>
 
 </body>
 </html>

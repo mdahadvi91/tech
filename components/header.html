@@ -1,26 +1,50 @@
 <header class="header">
   <div class="header-inner">
-    <a href="/" class="logo"><span>Ahadex</span></a>
+    <a href="/" class="logo">
+      <span class="logo-mark">A</span>
+      <span class="logo-text">Ahadex</span>
+    </a>
     
-    <button class="menu-btn" onclick="toggleSearch()" aria-label="Search">🔍</button>
+    <nav class="main-nav">
+      <a href="/#posts">Articles</a>
+      <a href="/#ai">AI Tools</a>
+      <a href="/#tech">Tech</a>
+      <a href="/#earn">Earning</a>
+      <a href="/about.html">About</a>
+    </nav>
+    
+    <div class="header-actions">
+      <button class="icon-btn" onclick="toggleSearch()" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/>
+        </svg>
+      </button>
+      
+      <div class="lang-switcher">
+        <button class="icon-btn lang-btn" onclick="toggleLangMenu()" aria-label="Language">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+          <span class="lang-code" id="currentLang">EN</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <a href="/" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
+          <a href="/bn/" data-lang="bn"><span class="lang-flag">🇧🇩</span> বাংলা</a>
+          <a href="/ar/" data-lang="ar"><span class="lang-flag">🇦🇪</span> العربية</a>
+          <a href="/hi/" data-lang="hi"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
+        </div>
+      </div>
+      
+      <button class="menu-icon-btn" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
     
     <div class="search-box" id="searchBox">
       <input type="text" id="searchInput" placeholder="Search articles..." autocomplete="off" onkeyup="searchPosts(this.value)">
       <div class="search-results" id="searchResults"></div>
-    </div>
-    
-    <div class="lang-switcher">
-      <button class="lang-btn" onclick="toggleLangMenu()" aria-label="Language">
-        <span class="lang-flag" id="currentFlag">🌍</span>
-        <span id="currentLang">EN</span>
-        <span style="font-size:10px">▼</span>
-      </button>
-      <div class="lang-dropdown" id="langDropdown">
-        <a href="/" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
-        <a href="/bn/" data-lang="bn"><span class="lang-flag">🇧🇩</span> বাংলা</a>
-        <a href="/ar/" data-lang="ar"><span class="lang-flag">🇦🇪</span> العربية</a>
-        <a href="/hi/" data-lang="hi"><span class="lang-flag">🇮🇳</span> हिन्दी</a>
-      </div>
     </div>
   </div>
 </header>

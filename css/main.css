@@ -44,6 +44,7 @@
 .lang-dropdown a:hover{background:#f0f7ff;color:#0066ff}
 .lang-dropdown a.active{background:#f0f7ff;color:#0066ff;font-weight:700}
 .lang-flag{font-size:18px}
+.lang-code{font-size:11px;font-weight:700;margin-left:2px;color:#334155}
 
 /* MOBILE MENU */
 .mobile-menu{position:fixed;top:0;right:-300px;width:280px;height:100vh;background:#fff;box-shadow:-5px 0 30px rgba(0,0,0,.1);z-index:2000;transition:.3s;padding:80px 20px 20px;overflow-y:auto}
@@ -121,6 +122,7 @@ a{color:inherit}
 .lang-dropdown a:hover{background:#f0f7ff;color:#0066ff}
 .lang-dropdown a.active{background:#f0f7ff;color:#0066ff;font-weight:700}
 .lang-flag{font-size:18px}
+.lang-code{font-size:11px;font-weight:700;margin-left:2px;color:#334155}
 .mobile-menu{position:fixed;top:0;left:-300px;width:280px;height:100vh;background:#fff;box-shadow:5px 0 30px rgba(0,0,0,.1);z-index:2000;transition:.3s;padding:80px 20px 20px;overflow-y:auto}
 .mobile-menu.open{left:0}
 .mobile-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1999;opacity:0;visibility:hidden;transition:.3s}
