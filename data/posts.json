@@ -1,14 +1,29 @@
 [
-  {"title":"Top 10 Free AI Tools in 2026","url":"/posts/top-10-free-ai-tools-2025.html","description":"The most powerful AI tools that cost nothing","tags":"AI tools free 2026 ChatGPT"},
-  {"title":"How to Speed Up Your Android Phone","url":"/posts/speed-up-android-phone-2026.html","description":"10 proven tricks to make your phone faster","tags":"Android speed phone slow"},
-  {"title":"Best Free VPN Apps for UAE Users","url":"/posts/best-free-vpn-apps-uae-2026.html","description":"7 tested VPNs that actually work in UAE","tags":"VPN UAE free privacy"},
-  {"title":"How to Start Freelancing from UAE","url":"/posts/start-freelancing-from-uae-2026.html","description":"Complete guide for UAE residents to earn online","tags":"freelancing UAE Dubai earn"},
-  {"title":"ChatGPT Complete Guide for Beginners","url":"/posts/chatgpt-complete-guide-beginners.html","description":"Learn ChatGPT from scratch in 10 minutes","tags":"ChatGPT AI guide beginner"},
-  {"title":"15 Best Online Earning Apps 2026","url":"/posts/best-online-earning-apps-2026.html","description":"Real apps that actually pay through Payoneer","tags":"earning apps online money 2026"},
-  {"title":"Save Money as an Expat in UAE","url":"/posts/save-money-expat-uae-2026.html","description":"15 proven tips to build real savings in UAE","tags":"save money UAE expat budget"},
-  {"title":"Top 10 Android Apps You Must Have","url":"/posts/top-10-android-apps-2026.html","description":"Free must-have apps for every Android phone","tags":"Android apps free must have"},
-  {"title":"How to Make Money with AI in 2026","url":"/posts/make-money-with-ai-2026.html","description":"10 real methods with realistic income potential","tags":"money AI earn income 2026"},
-  {"title":"Best Free Online Courses with Certificates","url":"/posts/best-free-online-courses-certificates-2026.html","description":"15 free courses from Google, IBM, Harvard","tags":"courses free certificate online learning"},
-  {"title":"How to Get a Job in UAE","url":"/posts/how-to-get-job-in-uae-2026.html","description":"Complete guide with CV tips and salary expectations","tags":"job UAE Dubai career cv"},
-  {"title":"How I Built My Website for Free","url":"/posts/how-to-build-website-free-2026.html","description":"Step-by-step guide using GitHub and Cloudflare","tags":"website free GitHub Cloudflare build"}
+  {"lang":"en","title":"Top 10 Free AI Tools in 2026","url":"/posts/top-10-free-ai-tools-2025.html","description":"4 months of testing, real results","tags":"AI tools free 2026 ChatGPT Gemini Claude"},
+  {"lang":"en","title":"How to Speed Up Your Android Phone","url":"/posts/speed-up-android-phone-2026.html","description":"30-day experiment with my own phone","tags":"Android speed phone slow fix"},
+  {"lang":"en","title":"Best Free VPN Apps for UAE Users","url":"/posts/best-free-vpn-apps-uae-2026.html","description":"7 VPNs tested for 3 months","tags":"VPN UAE free privacy Proton Windscribe"},
+  {"lang":"en","title":"How to Start Freelancing from UAE","url":"/posts/start-freelancing-from-uae-2026.html","description":"AED 15,000/month in 8 months","tags":"freelancing UAE Dubai earn Upwork Fiverr"},
+  {"lang":"en","title":"ChatGPT Complete Guide for Beginners","url":"/posts/chatgpt-complete-guide-beginners.html","description":"From zero to confident user","tags":"ChatGPT AI guide beginner prompts"},
+  {"lang":"en","title":"15 Best Online Earning Apps 2026","url":"/posts/best-online-earning-apps-2026.html","description":"Real apps that actually pay","tags":"earning apps online money Payoneer Fiverr Upwork"},
+  {"lang":"en","title":"Save Money as an Expat in UAE","url":"/posts/save-money-expat-uae-2026.html","description":"Real budget breakdown","tags":"save money UAE expat budget Dubai savings"},
+  {"lang":"en","title":"Top 10 Android Apps You Must Have","url":"/posts/top-10-android-apps-2026.html","description":"Tested and used daily","tags":"Android apps free must have best"},
+  {"lang":"en","title":"How to Make Money with AI in 2026","url":"/posts/make-money-with-ai-2026.html","description":"4 attempts, 3 failures, 1 success","tags":"money AI earn income 2026 freelance"},
+  {"lang":"en","title":"Best Free Online Courses with Certificates","url":"/posts/best-free-online-courses-certificates-2026.html","description":"8 courses I actually completed","tags":"courses free certificate online learning Google IBM"},
+  {"lang":"en","title":"How to Get a Job in UAE","url":"/posts/how-to-get-job-in-uae-2026.html","description":"My 12 rejections story","tags":"job UAE Dubai career cv interview"},
+  {"lang":"en","title":"How I Built My Website for Free","url":"/posts/how-to-build-website-free-2026.html","description":"Step-by-step with GitHub","tags":"website free GitHub Cloudflare build hosting"},
+
+  {"lang":"bn","title":"২০২৬ সালের সেরা ১০টি ফ্রি AI টুল","url":"/bn/posts/top-10-free-ai-tools-2025.html","description":"৪ মাস পরীক্ষার সৎ রিপোর্ট","tags":"এআই টুল ফ্রি ২০২৬ চ্যাটজিপিটি জেমিনি ক্লড"},
+  {"lang":"bn","title":"Android ফোন দ্রুত করার ১০টি উপায়","url":"/bn/posts/speed-up-android-phone-2026.html","description":"৩০ দিনের পরীক্ষার ডায়েরি","tags":"অ্যান্ড্রয়েড ফোন দ্রুত ধীর মোবাইল স্পিড"},
+  {"lang":"bn","title":"UAE-এর জন্য সেরা ফ্রি VPN অ্যাপ","url":"/bn/posts/best-free-vpn-apps-uae-2026.html","description":"৩ মাসের পরীক্ষার রিপোর্ট","tags":"ভিপিএন ইউএই ফ্রি প্রাইভেসি"},
+  {"lang":"bn","title":"UAE থেকে ফ্রিল্যান্সিং শুরু করার গাইড","url":"/bn/posts/start-freelancing-from-uae-2026.html","description":"৮ মাসে AED 15,000/মাস","tags":"ফ্রিল্যান্সিং দুবাই আয় আপওয়ার্ক ফাইভার"},
+
+  {"lang":"ar","title":"أفضل 10 أدوات ذكاء اصطناعي مجانية في 2026","url":"/ar/posts/top-10-free-ai-tools-2025.html","description":"تقرير صادق بعد 4 أشهر","tags":"ذكاء اصطناعي ادوات مجانية شات جي بي تي"},
+  {"lang":"ar","title":"كيف تسرّع هاتف Android","url":"/ar/posts/speed-up-android-phone-2026.html","description":"مذكرات 30 يومًا","tags":"اندرويد هاتف سريع بطيء"},
+  {"lang":"ar","title":"أفضل تطبيقات VPN مجانية في الإمارات","url":"/ar/posts/best-free-vpn-apps-uae-2026.html","description":"تقرير 3 أشهر","tags":"في بي ان الامارات مجاني خصوصية"},
+  {"lang":"ar","title":"كيف تبدأ العمل الحر من الإمارات","url":"/ar/posts/start-freelancing-from-uae-2026.html","description":"15000 درهم شهريًا في 8 أشهر","tags":"عمل حر الامارات دبي ربح"},
+
+  {"lang":"hi","title":"2026 में टॉप 10 फ्री AI टूल्स","url":"/hi/posts/top-10-free-ai-tools-2025.html","description":"4 महीने की टेस्टिंग रिपोर्ट","tags":"एआई टूल्स फ्री 2026 चैटजीपीटी जेमिनी"},
+  {"lang":"hi","title":"Android फोन को तेज करने के 10 तरीके","url":"/hi/posts/speed-up-android-phone-2026.html","description":"30 दिन की डायरी","tags":"एंड्रॉइड फोन तेज धीमा मोबाइल"},
+  {"lang":"hi","title":"UAE के लिए बेस्ट फ्री VPN ऐप्स","url":"/hi/posts/best-free-vpn-apps-uae-2026.html","description":"3 महीने की रिपोर्ट","tags":"वीपीएन यूएई फ्री प्राइवेसी"},
+  {"lang":"hi","title":"UAE से फ्रीलांसिंग कैसे शुरू करें","url":"/hi/posts/start-freelancing-from-uae-2026.html","description":"8 महीने में 15000 दिरहम","tags":"फ्रीलांसिंग दुबई कमाई"}
 ]
